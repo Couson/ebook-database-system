@@ -29,10 +29,11 @@ This repo will touch some knowledge about database system.
       - partial: some entities may not participate in any relationship in the set
     - notation: A line may have an associated minimum and maximum cardinality, shown in the form l..h, where l is the minimum and h the maximum cardinality
     - e.g. instructor can advise 0 student or as many as he/she like; student can have one and only one advisor 
-    - ![img-1](./img-1.png)
+      ![img-1](./img-1.png)
     - weak entity (double rectangle) vs strong entity
       - discriminator
-    - 
+      ![img-1](./img-2.png)
+      ![img-1](./img-3.png)
 
 - Queries (relational algebra, SQL)
 - Normalization
