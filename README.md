@@ -24,11 +24,15 @@ This repo will touch some knowledge about database system.
       - many-to-one N:1
       - one-to-many N:N
     - roles: keys that define relationships?
-    - total and partial participation:
+    - total and partial participation (double line):
       - total: every entity in the set participates at least one relation in the relationship set
       - partial: some entities may not participate in any relationship in the set
     - notation: A line may have an associated minimum and maximum cardinality, shown in the form l..h, where l is the minimum and h the maximum cardinality
-    - ![Image of Yaktocat](./img-1.png)
+    - e.g. instructor can advise 0 student or as many as he/she like; student can have one and only one advisor 
+    - ![img-1](./img-1.png)
+    - weak entity (double rectangle) vs strong entity
+      - discriminator
+    - 
 
 - Queries (relational algebra, SQL)
 - Normalization
