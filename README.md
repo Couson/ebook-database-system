@@ -28,6 +28,7 @@ This repo will touch some knowledge about database system.
       - total: every entity in the set participates at least one relation in the relationship set
       - partial: some entities may not participate in any relationship in the set
     - notation: A line may have an associated minimum and maximum cardinality, shown in the form l..h, where l is the minimum and h the maximum cardinality
+    - ![Image of Yaktocat](./img-1.png)
 
 - Queries (relational algebra, SQL)
 - Normalization
