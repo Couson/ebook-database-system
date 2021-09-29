@@ -2,7 +2,7 @@
 This repo will touch some knowledge about database system.
 
 
-- DB Structure
+1. DB Structure
   - relational vs hierarchical vs network
   -  database system: 
     -  management & access + meta-data + collection of data
@@ -32,10 +32,18 @@ This repo will touch some knowledge about database system.
       ![img-1](./img-1.png)
     - weak entity (double rectangle) vs strong entity
       - discriminator
+      - identifying relationship
+    - Specialization
+      - overlapping
+      - disjoint
       ![img-1](./img-2.png)
       ![img-1](./img-3.png)
 
-- Queries (relational algebra, SQL)
+2. Queries (relational algebra, SQL)
+
+
+
+
 - Normalization
 - Design Principles
 - Testing
