@@ -63,16 +63,19 @@ This repo will touch some knowledge about database system.
                                 DFNAME VARCHAR(10) DEFAULT 'NULL',
                                 DNUM INTEGER *row-constraint-2*,
                                 ...
-                                PRIMARY KEY(DNUM),
+                                PRIMARY KEY(DNAME, DFNAME),
                                 UNIQUE(DFNAME, ....),
                                 FOREIGN KEY(DFNAME) REFERENCES **foregin-table**
                                 ON DELETE SET DEFAULT
                                 ON UPDATE CASCADE/SET NULL,
-                                CONSTRAINT **Dnum_check** CHECK(DNUM > 0),
+                                CONSTRAINT *Dnum_check* CHECK(DNUM > 0),
                                 *table-constraint-2*);
       ```
     - 
-     ```CREATE TABLE *schema0name*(...)```
+      ```CREATE TABLE *schema0name*(...)```
+     
+    - adding new attr to an existing table
+      ```ALTER TABLE *table-name* ADD JOB VARCHAR(12) ```
   - basics
    - Selection
      ```
