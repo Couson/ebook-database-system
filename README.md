@@ -40,8 +40,29 @@ This repo will touch some knowledge about database system.
       ![img-1](./img-3.png)
 
 2. Queries (relational algebra, SQL)
+  - table creation syntax:
+    - **Name of attribute** **Domain of attribute** ***Row Constraint*
+      **Table Constraint**
+    - CREATE TABLE *table-name*(DNAME VARCHAR(10) NOT NULL,
+                                DFNAME VARCHAR(10) NOT NULL,
+                                DNUM INTEGER *row-constraint-2*,
+                                ...
+                                PRIMARY KEY(DNUM),
+                                UNIQUE(DFNAME, ....)
+                                *table-constraint-2*);
+    - CREATE TABLE *schema0name*(...)
+  - basics
+   - Selection
+     SELECT *
+     FROM Movies
+     WHERE studioName = 'Disney' AND yaer = 1990
+     
+   - Projection
+     SELECT title, length
+     FROM Movies
+     WHERE studioName = 'Disney' AND yaer = 1990
 
-
+  - 
 
 
 - Normalization
