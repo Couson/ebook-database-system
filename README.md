@@ -56,8 +56,11 @@ This repo will touch some knowledge about database system.
         - TIMESTRAMP
         - LINE
         - INTERVAL
-      
-    - 
+    - comparsion of strings
+      - 'foo' < 'foobar'
+      - 'foo'  > 'fodder'
+    - creation
+      E.g. 
       ```
       CREATE TABLE *table-name*(DNAME VARCHAR(10) NOT NULL,
                                 DFNAME VARCHAR(10) DEFAULT 'NULL',
@@ -71,12 +74,21 @@ This repo will touch some knowledge about database system.
                                 CONSTRAINT *Dnum_check* CHECK(DNUM > 0),
                                 *table-constraint-2*);
       ```
-    - 
+      E.g.
       ```CREATE TABLE *schema0name*(...)```
      
-    - adding new attr to an existing table
+  - Modification
+      adding new attr to an existing table, default to NULLs
       ```ALTER TABLE *table-name* ADD JOB VARCHAR(12) ```
-  - basics
+      ```ALTER TABLE *table-name* DROP *column-name*```
+      update
+      ```UPDATE ```
+  - Deletion
+      ``` DROP TABLE *table-name* ```
+      ``` DROP SCHEMA *schema-name* ```
+      ``` DROP DATABASE *DB-name* ```
+      
+  - Relational Model Operations
    - Selection
      ```
      SELECT *
@@ -90,9 +102,12 @@ This repo will touch some knowledge about database system.
      FROM Movies
      WHERE studioName = 'Disney' AND yaer = 1990
      ```
-  - 
-
-
+  - Alias
+  - Like
+    
+    ```*string* LIKE *pattern*```
+  - Ordering output
+    ORDER BY  *attr-A + attr-B* DESC/ASC
 - Normalization
 - Design Principles
 - Testing
