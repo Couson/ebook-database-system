@@ -89,30 +89,29 @@ This repo will touch some knowledge about database system.
       ``` DROP DATABASE *DB-name* ```
       
   - Relational Model Operations
-   - Selection
-     ```
-     SELECT *
-     FROM Movies
-     WHERE studioName = 'Disney' AND year = 1990
-     ```
-     
-   - Projection
-   - ```
-     SELECT title, length
-     FROM Movies
-     WHERE studioName = 'Disney' AND year = 1990
-     ```
-  - Union
-  - Set Difference
-  - Product
-  - Join
-  - Other Operations
-    - Alias
-    - Like
+    - Selection
+      ```
+      SELECT *
+      FROM Movies
+      WHERE studioName = 'Disney' AND year = 1990
+      ```
       
-      ```*string* LIKE *pattern*```
-    - Ordering output
-      ```ORDER BY  *attr-A + attr-B* DESC/ASC```
+    - Projection
+    - ```
+      SELECT title, length
+      FROM Movies
+      WHERE studioName = 'Disney' AND year = 1990
+      ```
+   - Union
+   - Set Difference
+   - Product
+   - Join
+ - Other Operations
+   - Alias
+   - Like   
+     ```*string* LIKE *pattern*```
+   - Ordering output
+     ```ORDER BY  *attr-A + attr-B* DESC/ASC```
 - Normalization
 - Design Principles
 - Testing
