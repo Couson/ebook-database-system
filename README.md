@@ -102,12 +102,17 @@ This repo will touch some knowledge about database system.
      FROM Movies
      WHERE studioName = 'Disney' AND year = 1990
      ```
-  - Alias
-  - Like
-    
-    ```*string* LIKE *pattern*```
-  - Ordering output
-    ```ORDER BY  *attr-A + attr-B* DESC/ASC```
+  - Union
+  - Set Difference
+  - Product
+  - Join
+  - Other Operations
+    - Alias
+    - Like
+      
+      ```*string* LIKE *pattern*```
+    - Ordering output
+      ```ORDER BY  *attr-A + attr-B* DESC/ASC```
 - Normalization
 - Design Principles
 - Testing
