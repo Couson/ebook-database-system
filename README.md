@@ -43,6 +43,20 @@ This repo will touch some knowledge about database system.
   - table creation syntax:
     - **Name of attribute** **Domain of attribute** ***Row Constraint*
       **Table Constraint**
+      - Domain Type:
+        - CHAR(n): fix len character string with user-specified len n; single-quote
+        - VARCHAR(n): variable len char with maximum length n
+        - INT: integer
+        - SMALLINT: samll integer, machine-dependent
+        - NUMERIC(p,d): fixed pt number, with user-specified precision of p digits, with d digits to the right of deciml pt. (e.g. numeric(3,1) allows 44.5 to be stored
+        - REAL,DOUBLE PRECISION
+        - FLOAT(N)
+        - TEXT
+        - DATE
+        - TIMESTRAMP
+        - LINE
+        - INTERVAL
+      
     - 
       ```
       CREATE TABLE *table-name*(DNAME VARCHAR(10) NOT NULL,
@@ -53,18 +67,22 @@ This repo will touch some knowledge about database system.
                                 UNIQUE(DFNAME, ....)
                                 *table-constraint-2*);
       ```
-    - CREATE TABLE *schema0name*(...)
+    - 
+     ```CREATE TABLE *schema0name*(...)```
   - basics
    - Selection
+     ```
      SELECT *
      FROM Movies
      WHERE studioName = 'Disney' AND yaer = 1990
+     ```
      
    - Projection
+   - ```
      SELECT title, length
      FROM Movies
      WHERE studioName = 'Disney' AND yaer = 1990
-
+     ```
   - 
 
 
