@@ -93,21 +93,21 @@ This repo will touch some knowledge about database system.
      ```
      SELECT *
      FROM Movies
-     WHERE studioName = 'Disney' AND yaer = 1990
+     WHERE studioName = 'Disney' AND year = 1990
      ```
      
    - Projection
    - ```
      SELECT title, length
      FROM Movies
-     WHERE studioName = 'Disney' AND yaer = 1990
+     WHERE studioName = 'Disney' AND year = 1990
      ```
   - Alias
   - Like
     
     ```*string* LIKE *pattern*```
   - Ordering output
-    ORDER BY  *attr-A + attr-B* DESC/ASC
+    ```ORDER BY  *attr-A + attr-B* DESC/ASC```
 - Normalization
 - Design Principles
 - Testing
