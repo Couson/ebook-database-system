@@ -103,10 +103,20 @@ This repo will touch some knowledge about database system.
       WHERE studioName = 'Disney' AND year = 1990
       ```
    - Union
-   - Set Difference
+   - Set Difference: r - s, put rows from r into the results iff they're not in s.
+   - Set Intersection: r n s = r - (r - s)
    - Product
+     - cartesian product r x s, every tuple in r is paired with every row in s
    - Join
+     - natural join r |x| s
+     - conditional join r |x|_r.C=s.C s
  - Other Operations
+   - rename p_x(E)
+   - Aggre
+     - SUM
+     - AVG
+     - MAX
+     - MIN
    - Alias
    - Like   
      ```*string* LIKE *pattern*```
