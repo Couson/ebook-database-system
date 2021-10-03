@@ -60,11 +60,15 @@ This repo will touch some knowledge about database system.
     - 
       ```
       CREATE TABLE *table-name*(DNAME VARCHAR(10) NOT NULL,
-                                DFNAME VARCHAR(10) NOT NULL,
+                                DFNAME VARCHAR(10) DEFAULT 'NULL',
                                 DNUM INTEGER *row-constraint-2*,
                                 ...
                                 PRIMARY KEY(DNUM),
-                                UNIQUE(DFNAME, ....)
+                                UNIQUE(DFNAME, ....),
+                                FOREIGN KEY(DFNAME) REFERENCES **foregin-table**
+                                ON DELETE SET DEFAULT
+                                ON UPDATE CASCADE/SET NULL,
+                                CONSTRAINT **Dnum_check** CHECK(DNUM > 0),
                                 *table-constraint-2*);
       ```
     - 
