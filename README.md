@@ -117,7 +117,7 @@ This repo will touch some knowledge about database system.
      - AVG
      - MAX
      - MIN
-   - Alias
+   - Alias ```FROM 	EMPLOYEE (AS) *E*, DEPARTMENT (AS) *D*```
    - Like   
      ```*string* LIKE *pattern*```
    - Ordering output
