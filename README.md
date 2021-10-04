@@ -88,6 +88,15 @@ This repo will touch some knowledge about database system.
       ``` DROP SCHEMA *schema-name* ```
       ``` DROP DATABASE *DB-name* ```
       
+  - Insertion: Attribute values should be listed in the same order as the attributes were specified in the CREATE TABLE command. Output table from a query e.g. select can also be inserted.
+    ```INSERT INTO <table> VALUES (..., ...)```
+    ```INSERT INTO <table(attr1, attr2, attr3)> VALUES(...,...,..,)```
+  - Update  
+    ```
+    UPDATE PROJECT 
+    SET <value tuples> 
+    WHERE	<conditions>
+    ```
   - Relational Model Operations
     - Selection
       ```
@@ -122,7 +131,7 @@ This repo will touch some knowledge about database system.
      ```*string* LIKE *pattern*```
    - Ordering output
      ```ORDER BY  *attr-A + attr-B* DESC/ASC```
-     
+  - ARITHMETIC OPERATIONS: ```+, 1, *, /```
   - Nesting
     ```
     SELECT <attributes>
@@ -134,6 +143,17 @@ This repo will touch some knowledge about database system.
           WHERE <condition>
           )
     ```
+    - If a condition in the WHERE-clause of a nested query references an attribute of a relation declared in the outer query, the two queries are said to be correlated
+  - Other Operators
+    - GROUPBY
+    - HAVING
+    - IN, membership checkning
+    - EXISTS, emptyness checking
+      ```
+      SELECT …
+      FROM …
+      WHERE Cond AND EXISTS (nested sub-query)
+      ```
 - Normalization
 - Design Principles
 - Testing
