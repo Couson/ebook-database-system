@@ -154,6 +154,10 @@ This repo will touch some knowledge about database system.
       FROM …
       WHERE Cond AND EXISTS (nested sub-query)
       ```
+  - Views
+    ```
+    CREATE VIEW <view name> As ...
+    ```
 - Normalization
 - Design Principles
 - Testing
