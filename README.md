@@ -122,6 +122,18 @@ This repo will touch some knowledge about database system.
      ```*string* LIKE *pattern*```
    - Ordering output
      ```ORDER BY  *attr-A + attr-B* DESC/ASC```
+     
+  - Nesting
+    ```
+    SELECT <attributes>
+    FROM <tables>
+    WHERE <condition>
+          *DNO* IN (
+          SELECT <attributes>
+          FROM <tables>
+          WHERE <condition>
+          )
+    ```
 - Normalization
 - Design Principles
 - Testing
